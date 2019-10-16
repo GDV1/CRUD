@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>CRUD</title>
@@ -7,7 +8,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
+
   <app-root></app-root>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD1UhATOpq0UsCWJQIEbXGCzPApwk7bzzo",
+    authDomain: "crud-d485e.firebaseapp.com",
+    databaseURL: "https://crud-d485e.firebaseio.com",
+    projectId: "crud-d485e",
+    storageBucket: "crud-d485e.appspot.com",
+    messagingSenderId: "281318334480",
+    appId: "1:281318334480:web:94892443b83b12018c2a95",
+    measurementId: "G-DJ3S9Z1HPQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </body>
+
 </html>
