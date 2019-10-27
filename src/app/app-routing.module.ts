@@ -8,6 +8,7 @@ import { AtualizarComponent } from './menu/atualizar/atualizar.component';
 
 
 const routes: Routes = [
+  { path: '', component: MenuComponent},
   { path: 'menu', component: MenuComponent }, 
   { path: 'cadastrar', component:CadastrarComponent },
   { path: 'lista', component: ListarComponent },

@@ -9,6 +9,14 @@ import { ListarComponent } from './menu/listar/listar.component';
 import { DeletarComponent } from './menu/deletar/deletar.component';
 import { AtualizarComponent } from './menu/atualizar/atualizar.component';
 
+
+// Configuração Firebase
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireFunctionsModule } from '@angular/fire/functions';
+import { environment } from '../environments/environment';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +24,14 @@ import { AtualizarComponent } from './menu/atualizar/atualizar.component';
     CadastrarComponent,
     ListarComponent,
     DeletarComponent,
-    AtualizarComponent
+    AtualizarComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireFunctionsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
