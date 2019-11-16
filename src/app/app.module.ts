@@ -8,7 +8,7 @@ import { CadastrarComponent } from './menu/cadastrar/cadastrar.component';
 import { ListarComponent } from './menu/listar/listar.component';
 import { DeletarComponent } from './menu/deletar/deletar.component';
 import { AtualizarComponent } from './menu/atualizar/atualizar.component';
-
+import { FormsModule } from '@angular/forms';
 
 // Configuração Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -28,6 +28,7 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
