@@ -1,1 +1,18 @@
-<p>list works!</p>
+<table class=" table table-hover table-striped">
+    <thead>
+        <th>Título</th>
+        <th>Categoria</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let receita of receitas | async">
+            <td>{{ receita.titulo }}</td>
+            <td>{{ receita.categoria }}</td>
+            <td>
+                <button class="btn btn-info" (click)="edit(receita, receita.key)">Editar</button>
+                <button class="btn btn-danger ml-2" (click)="delete(receita.key)">Excluir</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
