@@ -11,7 +11,7 @@ import { Receita } from '../receita';
 })
 export class ListComponent implements OnInit {
 
-  receita: Observable<any>;
+  receitas: Observable<any>;
 
   constructor(
     private _receitaService: ReceitaService,
@@ -19,7 +19,7 @@ export class ListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.receita = this._receitaService.getAll();
+    this.receitas = this._receitaService.getAll();
   }
 
   delete(key: string){

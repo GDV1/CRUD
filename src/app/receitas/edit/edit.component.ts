@@ -25,6 +25,10 @@ export class EditComponent implements OnInit {
         this.receita = new Receita();
         this.receita.titulo = data.receita.titulo;
         this.receita.categoria = data.receita.categoria;
+        this.receita.ingredientes = data.receita.ingredientes;
+        this.receita.modo_preparo = data.receita.modo_preparo;
+        this.receita.porcoes = data.receita.porcoes;
+        this.receita.tempo_preparo = data.receita.tempo_preparo;
         this.key = data.key;
       }
     })
