@@ -1,0 +1,24 @@
+/*Configurações para tela 1368x768 */
+h2{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size:  60px;
+    margin: 15px;
+}
+
+button{
+    margin: 10px;
+    width: 300px;
+    height: 150px;
+    font-weight: bold;
+}
+
+.row{
+    text-align: center;
+}
+
+.jumbotron{
+    padding: 20px;
+    width: 1000px;
+    margin-left: 60px;
+}

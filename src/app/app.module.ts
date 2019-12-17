@@ -13,12 +13,14 @@ import { EditComponent } from './receitas/edit/edit.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
-    EditComponent
+    EditComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
