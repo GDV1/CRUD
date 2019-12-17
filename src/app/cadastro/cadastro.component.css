@@ -1,6 +1,10 @@
-h3{
+h4{
+    font-family: 'Lobster', cursive;
     text-align: center;
+    font-size: 30px;
+    margin: 15px;
 }
+
 
 button{
     margin-bottom: 50px;
