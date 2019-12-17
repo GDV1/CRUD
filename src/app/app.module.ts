@@ -11,12 +11,18 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { MenuComponent } from './menu/menu.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { ListaComponent } from './lista/lista.component';
+import { EditarComponent } from './editar/editar.component';
+import { ExcluirComponent } from './excluir/excluir.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    CadastroComponent
+    CadastroComponent,
+    ListaComponent,
+    EditarComponent,
+    ExcluirComponent
   ],
   imports: [
     BrowserModule,
