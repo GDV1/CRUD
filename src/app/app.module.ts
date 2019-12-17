@@ -5,10 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
-// Components
-import { ListComponent } from './receitas/list/list.component';
-import { EditComponent } from './receitas/edit/edit.component';
-
 // Firebase settings - with AngularFire
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
@@ -19,8 +15,6 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent,
-    EditComponent,
     MenuComponent,
     CadastroComponent
   ],
