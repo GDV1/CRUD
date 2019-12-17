@@ -14,13 +14,15 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { MenuComponent } from './menu/menu.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     EditComponent,
-    MenuComponent
+    MenuComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
