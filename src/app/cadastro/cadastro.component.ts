@@ -35,7 +35,6 @@ export class CadastroComponent implements OnInit {
   }
 
   onSubmit(){
-    
     if(this.key) {
       this._receitaService.update(this.receita, this.key);
     } else {
