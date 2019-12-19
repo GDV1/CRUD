@@ -11,3 +11,7 @@ button{
     width: 100%;
     font-weight: bolder;
 }
+
+.jumbotron{
+    padding: 2rem 2rem;
+}
