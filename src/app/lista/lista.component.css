@@ -9,21 +9,21 @@ h4{
     margin: 15px;
 }
 
-table{
-    margin-top: 20px;
+/* Campo de pesquisa*/
+input {
+    margin: 10px;
 }
 
-button{
-    margin-bottom: 50px;
-    margin-top: 50px;
-    width: 50%;
-    font-weight: bolder;
+form {
+    margin-left: 400px;
 }
 
-.col{
-    text-align: center;
+/* Card */
+.card {
+    width: 18rem;
+    margin-top: 45px;
 }
 
-form{
-    text-align: center;
+a{
+    width: 100%;
 }
