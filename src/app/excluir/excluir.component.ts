@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ReceitaService } from '../shared/receita.service';
 
 @Component({
   selector: 'app-excluir',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExcluirComponent implements OnInit {
 
-  constructor() { }
+  receitas: Observable<any>;
+
+  constructor(
+    private _receitaService:ReceitaService,
+  ) { }
 
   ngOnInit() {
+    this.receitas = this._receitaService.getAll();
   }
 
+  delete(key: string){
+    this._receitaService.delete(key);
+  }
 }

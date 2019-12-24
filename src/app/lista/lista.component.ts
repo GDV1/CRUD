@@ -22,13 +22,8 @@ export class ListaComponent implements OnInit {
     this.receitas = this._receitaService.getAll();
   }
 
-  delete(key: string){
-    this._receitaService.delete(key);
-  }
-
   edit(receita: Receita, key: string){
     this._receitaDataService.obtemReceita(receita, key);
   }
-
 }
 

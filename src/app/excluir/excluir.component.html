@@ -1,1 +1,20 @@
-<p>excluir works!</p>
+<div class="container">
+    <h4>Excluir Receitas</h4>
+    <button class="btn btn-secondary" routerLink="">Voltar</button>
+
+    <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+    </form>
+
+    <div class="card" *ngFor="let receita of receitas | async">
+        <div class="card-body">
+            <h5 class="card-title text-center"> {{ receita.titulo }} </h5>
+            <p class="card-text">Categoria: {{ receita.categoria }} </p>
+            <p class="card-text">Rendimento: {{ receita.porcoes }}</p>
+            <p class="card-text">Tempo de Preparo: {{ receita.tempo_preparo }}</p>
+            <a href="#" class="btn btn-primary">Ver receita</a>
+            <a href="#" class="btn btn-danger">Excluir</a>
+        </div>
+    </div>
+</div>
