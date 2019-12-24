@@ -12,27 +12,27 @@ export class ReceitaService {
     private _angularFireDatabase: AngularFireDatabase
   ) { }
 
-  insert(receita: Receita){
-    this._angularFireDatabase.list('receita-facil-c4846').push(receita); 
+  insert(receita: Receita) {
+    this._angularFireDatabase.list('receita-facil-c4846').push(receita);
   }
 
-  update(receita: Receita, key: string){
+  update(receita: Receita, key: string) {
     this._angularFireDatabase.list('receita-facil-c4846').update(key, receita);
   }
 
-  getAll(){
+  getAll() {
     return this._angularFireDatabase.list('receita-facil-c4846')
       .snapshotChanges()
-        .pipe(
-          map(changes => {
-            return changes.map(dados => ({
-              key: dados.payload.key, ...dados.payload.val()
-            }))
-          })
-        )
+      .pipe(
+        map(changes => {
+          return changes.map(dados => ({
+            key: dados.payload.key, ...dados.payload.val()
+          }))
+        })
+      )
   }
 
-  delete(key: string){
+  delete(key: string) {
     this._angularFireDatabase.object(`receita-facil-c4846/${key}`).remove();
   }
 }

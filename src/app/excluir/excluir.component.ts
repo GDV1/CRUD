@@ -17,6 +17,7 @@ export class ExcluirComponent implements OnInit {
 
   ngOnInit() {
     this.receitas = this._receitaService.getAll();
+    console.log();
   }
 
   delete(key: string){
