@@ -118,6 +118,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "CRUD"
+    }
+  },
+  "defaultProject": "CRUD",
+  "cli": {
+    "analytics": false
+  }
 }
